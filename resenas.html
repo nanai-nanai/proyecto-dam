@@ -1,0 +1,74 @@
+<DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+<h1>RESEÑAS</h1>
+	<!--
+	*Esto es la plantilla a usar para las reseñas.
+	<div class="reseña">
+	
+		*Este es el div para poner la imagen del juego que se desee.
+		<div class="imgReseña">
+			<img src=""/>
+		</div>
+		
+		*Sección para el título del juego.
+		<div class="tituloJuego">
+			<h2>TITULO DEL JUEGO</h2>
+		</div>
+		
+		*La parte principal de la reseña, incluye autor de la reseña, fecha, resumen, y botón de ver más.
+		<div class="cuerpoReseña">
+			*Autor de la reseña.
+			<div class="autorReseña">
+				<p>NOMBRE DEL AUTOR</p>
+			</div>
+			*Fecha de la reseña.
+			<div class="fechaReseña">
+				<p>FECHA DE LA RESEÑA, FORMATO DD/MM/AAAA</p>
+			</div>
+			*Escribid el resumen que quereis que se muestre aquí.
+			<div class="resumenReseña">
+				<p>ESCRIBID AQUÍ EL RESUMEN QUE QUERAÍS DE LA RESEÑA. NO TIENE POR QUÉ SER TEXTO QUE APAREZCA LUEGO.</p>
+			</div>
+			*Esto es el botón de ver más. Hace falta cambiar el atributo de la función Abrir y poner dentro el id de la sección completa. Debe ir entre comillas simples.
+			<div class="mas">
+				<a class="menu2" href="#" onClick="Abrir('reseña1')">Ver más</a>
+			</div>
+			
+			*Esta es la reseña completa. Aparece oculta por defecto. IMPORTANTE: hay que cambiar el id de la sección para que sea acorde. Debe ser el mismo aquí y en las funciones abrir y cerrar.
+			<div id="reseña1" style="display:none;">
+				Div con los datos adicionales del juego. Se mostrará debajo de la imagen.
+				<div class="datosjuego">
+					<p class="fechaSalida">FECHA DE SALIDA DEL JUEGO. SE PUEDE PONER SÓLO EL AÑO, O SÓLO EL MES Y EL AÑO.</p>
+					<p class="desarrolladorJuego">NOMBRE DEL ESTUDIO DESARROLLADOR DEL JUEGO.</p>
+					<p class="categoriaJuego">CATEGORÍA O CATEGORÍAS DEL JUEGO, SEPARADAS POR COMAS EN CASO DE HABER VARIAS.</p>
+				</div>
+				*La reseña completa en sí. Inclue nota y botón de ver menos.
+				<div class ="reseñaCompleta">
+				<p> AQUÍ VA LA RESEÑA COMPLETA. EXPLAYAOS TODO LO QUE QUERAÍS, Y RECORDAD USAR LAS ETIQUETAS DE FORMATO PARA NEGRITA, SUBRAYADO, Y CURSIVA SI DESEAÍS UTILIZARLOS. </p>
+					*Esto es el botón de ver menos. Hay que cambiar el atributo de función y poner dentro el id de la sección completa. Debe ir entre comillas simples.
+					<div class="menos">
+						<a class="menu2" href="#" onClick="Cerrar('reseña1')">ver menos</a>
+					</div>
+					*Esta es la nota del juego.
+					<div class="notaJuego">
+						<p>10</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<script>
+	function Cerrar(p1){
+		document.getElementById(p1).style.display="none";
+	}
+	
+	function Abrir(p1) {
+		document.getElementById(p1).style.display="block";
+	}
+	</script>
+</body>
