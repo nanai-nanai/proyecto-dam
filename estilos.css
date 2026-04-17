@@ -13,15 +13,20 @@
    ---------------------------------------------------------------- */
 
 /* TODO: Añadir estilos generales (fuente, colores base, márgenes...) */
-
-
-:root {
-  --color-fondo: #0D1117;       /* El tono más oscuro y profundo del fondo del logo */
-  --color-primario: #1B263B;    /* Azul medianoche inspirado en las sombras del mando 3D */
-  --color-secundario: #E0E1DD;  /* Gris platino suave, similar a los reflejos blancos del logo */
-  --color-acento: #00D2FF;      /* Cian vibrante que imita el brillo LED del mando y las letras */
-  --color-acento-oscuro: #0077B6; /* Azul oceánico para estados hover y profundidad */
+body {
+    background-color: #011741; 
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 
 
 /* ----------------------------------------------------------------
@@ -29,49 +34,46 @@
 
    ---------------------------------------------------------------- */
 
-   /*Selectores del header (SEBASTIAN)*/
+/*Selectores del header (SEBASTIAN)*/
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ff88; 
+}
 
-.cabecera-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-primario);
-    padding: 10px 40px; /* Más espacio a los lados */
-    height: 70px; /* Un poco más alto para que respire el logo */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
-    
-    /* Para que el header se quede pegado arriba al hacer scroll */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header h1 {
+    color: #00ff88;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hacemos que el enlace ocupe todo el ancho disponible y quite estilos de texto */
+.enlace-cabecera-total {
+    text-decoration: none;
+    display: block; /* Permite que ocupe espacio como una caja */
+    width:100%;
 }
 
 .logo-contenedor {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    gap: 15px; /* Espacio entre imagen y texto */
-    transition: transform 0.3s ease; /* Animación suave */
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 0; /* Un poco de margen interno para que sea más fácil hacer clic */
+    cursor: pointer;
 }
 
-/* Efecto chulo al pasar el ratón por el logo */
-.logo-contenedor:hover {
-    transform: scale(1.05);
+/* Efecto visual opcional: que brille un poco al pasar el ratón por cualquier parte del header */
+.enlace-cabecera-total:hover .nombre-sitio {
+    text-shadow: 0 0 10px #00ff88;
+    transition: 0.3s;
 }
 
-.logo-contenedor img {
-    height: 50px;
-    width: auto;
-}
-
-.nombre-sitio {
-    color: var(--color-acento); /* Título en cian neón */
-    font-size: 1.5rem;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(102, 252, 241, 0.3); /* Ligero brillo gaming */
+.logo-img {
+    height: 50px;  /* Ajusta este valor (40px, 60px, etc.) según lo que necesites */
+    width: auto;   /* Esto mantiene la proporción original de la imagen */
 }
 
 
@@ -89,35 +91,7 @@
 
 
 /* --- Página: nosotros.html --- */
-body {
-    background-color: #011741; 
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-}
 
-
-header {
-    background-color: #1f1f1f;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #00ff88; 
-}
-
-header h1 {
-    color: #00ff88;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-}
 
 
 .miembro {
