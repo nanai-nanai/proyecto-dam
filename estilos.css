@@ -13,7 +13,28 @@
    ---------------------------------------------------------------- */
 
 /* TODO: Añadir estilos generales (fuente, colores base, márgenes...) */
+body {
+    background-color: #011741; 
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    
+    /* --- NUEVO: Magia para pegar el footer abajo --- */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* El body ocupará al menos el 100% de la altura de la pantalla */
+}
 
+/* IMPORTANTE: Asegurarse de que el contenido central esté dentro de una etiqueta <main> en tu HTML */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    /* --- NUEVO: Empuja el footer hacia abajo --- */
+    flex-grow: 1; 
+}
 
 /* ----------------------------------------------------------------
    2. CABECERA Y NAVEGACIÓN 
@@ -24,6 +45,87 @@
    3. PIE DE PÁGINA (footer)
    ---------------------------------------------------------------- */
 
+   /*SEBASTIAN*/
+    .pie-pagina-principal {
+    background-color: #1f1f1f; /* Igual que el header */
+    border-top: 3px solid #00ff88; /* El verde neón característico */
+    color: #e0e0e0;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-contenedor {
+    max-width: 900px; /* Alineado con el 'main' del proyecto */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-info, .footer-enlaces, .footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Títulos del footer */
+.pie-pagina-principal h3, 
+.pie-pagina-principal h4 {
+    color: #00ff88;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Estilo de las listas en el footer */
+.footer-enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-enlaces li {
+    margin-bottom: 8px;
+}
+
+.footer-enlaces a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-enlaces a:hover {
+    color: #00ccff; /* Azul neón al pasar el mouse */
+    padding-left: 5px;
+}
+
+/* Sección de redes */
+.iconos-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.red-link {
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.red-link:hover {
+    text-decoration: underline;
+    filter: brightness(1.2);
+}
+
+/* Línea final de copyright */
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.85em;
+    color: #888;
+}
 
 /* ----------------------------------------------------------------
    6. ESTILOS ESPECÍFICOS DE CADA PÁGINA

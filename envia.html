@@ -1,17 +1,20 @@
 <DOCTYPE html>
-<head>
 
-</head>
-<body>
-	
-	<h1>ENVÍA TU RESEÑA</h1>
-	<div class="formulario">
+	<head>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+
+	<body>
+		<main>
+			<h1>ENVÍA TU RESEÑA</h1>
+			<div class="formulario">
 				<form action="contacto.php" method="post" class="contacto">
 					<legend>Reseña:</legend>
 					<p>Datos personales</p>
 					<div>
 						<label for="nombre">Nombre:</label><br>
-						<input id="nombre" type="text" name="nombre" placeholder="El nombre o apodo de quien escribe la reseña" required="" />
+						<input id="nombre" type="text" name="nombre"
+							placeholder="El nombre o apodo de quien escribe la reseña" required="" />
 					</div>
 					<div>
 						<label for="email">E-mail:</label><br>
@@ -24,13 +27,46 @@
 					</div>
 					<div>
 						<label for="mensaje">Reseña:</label><br>
-						<textarea id="mensaje" name="mensaje" placeholder="Escribe aquí todo el texto de tu reseña" required></textarea>
+						<textarea id="mensaje" name="mensaje" placeholder="Escribe aquí todo el texto de tu reseña"
+							required></textarea>
 					</div>
 					<div>
 						<label for="nota">Nota:</label><br>
 						<textarea id="nota" name="nota" placeholder="Puntuación sobre 10" required></textarea>
 					</div>
-					<input id="submit"  type="submit" name="submit" value="Enviar" />
+					<input id="submit" type="submit" name="submit" value="Enviar" />
 				</form>
 			</div>
-</body>
+		</main>
+		<footer class="pie-pagina-principal">
+			<div class="footer-contenedor">
+				<div class="footer-info">
+					<h3 class="footer-logo">JuegaManiacos</h3>
+					<p>La mejor comunidad para entusiastas de los videojuegos y las reseñas tecnológicas.</p>
+				</div>
+
+				<div class="footer-enlaces">
+					<h4>Navegación</h4>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="nosotros.html">Sobre Nosotros</a></li>
+						<li><a href="resenas.html">Reseñas</a></li>
+						<li><a href="envia.html">Envia tu reseña</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-social">
+					<h4>Síguenos</h4>
+					<div class="iconos-redes">
+						<a href="#" class="red-link">Facebook</a>
+						<a href="#" class="red-link">Instagram</a>
+						<a href="#" class="red-link">Twitter</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>&copy; 2026 JuegaManiacos — Desarrollado por el Equipo de Desarrollo</p>
+			</div>
+		</footer>
+	</body>
