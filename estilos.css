@@ -17,6 +17,7 @@
 
 /* ----------------------------------------------------------------
    2. CABECERA Y NAVEGACIÓN 
+
    ---------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------
@@ -32,7 +33,84 @@
 /* --- Página: index.html --- */
 
 
-/* --- Página: xxxxxx.html --- */
+/* --- Página: nosotros.html --- */
+body {
+    background-color: #011741; 
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
 
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ff88; 
+}
+
+header h1 {
+    color: #00ff88;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.miembro {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.miembro:hover {
+    transform: scale(1.02);
+    border-color: #00ff88;
+}
+
+.miembro h3 {
+    color: #00ff88;
+    margin-top: 0;
+}
+
+/* Lista de Reseñas */
+.lista-resenas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-resenas li {
+    margin: 10px 0;
+}
+
+.lista-resenas a {
+    color: #00ccff; /* Azul neón */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista-resenas a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
 
 /* --- Página:  xxxxxx.html --- */
