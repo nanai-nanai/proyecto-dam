@@ -1,120 +1,138 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="version" content="1.0.0">
-  <title>Reseñas</title>
-  <!-- Hoja de estilos compartida por todas las páginas del proyecto -->
-  <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-<header class="cabecera-principal">
-    <a href="index.html" class="enlace-cabecera-total">
-        <div class="logo-contenedor">
-            <img src="imagenes/logo/logo.png" alt="Logo JuegaManiacos" class="logo-img">
-            <h1 class="nombre-sitio">JuegaManiacos</h1>
-        </div>
-    </a>
 
-    <div id="contenedor-menu-interactivo"></div>
-</header>
-<h1>RESEÑAS</h1>
-<!--
-	*Esto es la plantilla a usar para las reseñas.
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="version" content="1.0.0">
+	<title>Reseñas</title>
+	<!-- Hoja de estilos compartida por todas las páginas del proyecto -->
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header class="cabecera-principal">
+		<a href="index.html" class="enlace-cabecera-total">
+			<div class="logo-contenedor">
+				<img src="imagenes/logo/logo.png" alt="Logo JuegaManiacos" class="logo-img">
+				<h1 class="nombre-sitio">JuegaManiacos</h1>
+			</div>
+		</a>
+
+		<div id="contenedor-menu-interactivo"></div>
+	</header>
+	<h1>RESEÑAS</h1>
 	<div class="reseña">
-	
-		*Este es el div para poner la imagen del juego que se desee.
+
 		<div class="imgReseña">
-			<img src=""/>
+			<img src="imagenes/resenas/sebastian/XenobladeChroniclesX/xeno.jpg" alt="Xenoblade Chronicles X" />
 		</div>
-		
-		*Sección para el título del juego.
+
 		<div class="tituloJuego">
-			<h2>TITULO DEL JUEGO</h2>
+			<h2>XENOBLADE CHRONICLES X</h2>
 		</div>
-		
-		*La parte principal de la reseña, incluye autor de la reseña, fecha, resumen, y botón de ver más.
+
 		<div class="cuerpoReseña">
-			*Autor de la reseña.
 			<div class="autorReseña">
-				<p>NOMBRE DEL AUTOR</p>
+				<p>Sebastian Vargas</p>
 			</div>
-			*Fecha de la reseña.
+
 			<div class="fechaReseña">
-				<p>FECHA DE LA RESEÑA, FORMATO DD/MM/AAAA</p>
+				<p>21/04/2026</p>
 			</div>
-			*Escribid el resumen que quereis que se muestre aquí.
+
 			<div class="resumenReseña">
-				<p>ESCRIBID AQUÍ EL RESUMEN QUE QUERAÍS DE LA RESEÑA. NO TIENE POR QUÉ SER TEXTO QUE APAREZCA LUEGO.</p>
+				<p>Xenoblade Chronicles X es una obra maestra de la exploración en mundo abierto. Adéntrate en el vasto
+					y hostil planeta Mira, pilota impresionantes mechas llamados Skells y lucha por la supervivencia de
+					la humanidad en este monumental JRPG de ciencia ficción.</p>
 			</div>
-			*Esto es el botón de ver más. Hace falta cambiar el atributo de la función Abrir y poner dentro el id de la sección completa. Debe ir entre comillas simples.
+
 			<div class="mas">
-				<a class="menu2" href="#" onClick="Abrir('reseña1')">Ver más</a>
+				<a class="menu2" href="#" onClick="Abrir('reseña_xcx')">Ver más</a>
 			</div>
-			
-			*Esta es la reseña completa. Aparece oculta por defecto. IMPORTANTE: hay que cambiar el id de la sección para que sea acorde. Debe ser el mismo aquí y en las funciones abrir y cerrar.
-			<div id="reseña1" style="display:none;">
-				Div con los datos adicionales del juego. Se mostrará debajo de la imagen.
+
+			<div id="reseña_xcx" style="display:none;">
+
 				<div class="datosjuego">
-					<p class="fechaSalida">FECHA DE SALIDA DEL JUEGO. SE PUEDE PONER SÓLO EL AÑO, O SÓLO EL MES Y EL AÑO.</p>
-					<p class="desarrolladorJuego">NOMBRE DEL ESTUDIO DESARROLLADOR DEL JUEGO.</p>
-					<p class="categoriaJuego">CATEGORÍA O CATEGORÍAS DEL JUEGO, SEPARADAS POR COMAS EN CASO DE HABER VARIAS.</p>
+					<p class="fechaSalida">Diciembre 2015</p>
+					<p class="desarrolladorJuego">Monolith Soft</p>
+					<p class="categoriaJuego">JRPG, Mundo Abierto, Ciencia Ficción, Acción</p>
 				</div>
-				*La reseña completa en sí. Inclue nota y botón de ver menos.
-				<div class ="reseñaCompleta">
-				<p> AQUÍ VA LA RESEÑA COMPLETA. EXPLAYAOS TODO LO QUE QUERAÍS, Y RECORDAD USAR LAS ETIQUETAS DE FORMATO PARA NEGRITA, SUBRAYADO, Y CURSIVA SI DESEAÍS UTILIZARLOS. </p>
-					*Esto es el botón de ver menos. Hay que cambiar el atributo de función y poner dentro el id de la sección completa. Debe ir entre comillas simples.
+
+				<div class="reseñaCompleta">
+					<p>Cuando la Tierra es destruida en un brutal fuego cruzado alienígena, los restos de la humanidad
+						escapan a las estrellas. Nuestra nave termina estrellándose en <b>Mira</b>, un planeta inmenso,
+						hermoso y letal. Este es el épico punto de partida de <i>Xenoblade Chronicles X</i>.</p>
+					<br>
+					<p>Lo que realmente define a este título de <b>Monolith Soft</b> no es su historia principal —que a
+						veces queda en un segundo plano—, sino su <u>incomparable mundo abierto</u>. Mira está dividido
+						en cinco continentes gigantescos, cada uno con su propia flora, fauna y ecosistema
+						espectacularmente diseñado. La sensación de escala y verticalidad es asombrosa, especialmente
+						cuando, tras decenas de horas de juego a pie, finalmente consigues tu licencia para pilotar un
+						<b>Skell</b>. El juego cambia por completo en ese momento: pasas de correr por las praderas a
+						transformarte en vehículo, surcar los cielos y enfrentarte cara a cara con monstruos del tamaño
+						de montañas que antes te obligaban a huir.</p>
+					<br>
+					<p>El sistema de combate evoluciona respecto al primer <i>Xenoblade</i>, volviéndose más rápido,
+						dinámico y profundo, con un fuerte énfasis en el cambio de clases y el posicionamiento. Todo
+						esto viene acompañado de una banda sonora única compuesta por el talentoso <i>Hiroyuki
+							Sawano</i>, que mezcla rock, electrónica y temas vocales muy peculiares que le dan una
+						identidad inconfundible al título.</p>
+					<br>
+					<p>En conclusión, estamos ante un triunfo absoluto del diseño de mundos. Aunque la interfaz puede
+						resultar abrumadora al principio, la experiencia de perderse en Mira, descubrir sus secretos y
+						ayudar a reconstruir la ciudad de Nueva Los Ángeles es un viaje que ningún fan de los RPG de
+						acción debería perderse.</p>
+
 					<div class="menos">
-						<a class="menu2" href="#" onClick="Cerrar('reseña1')">ver menos</a>
+						<a class="menu2" href="#" onClick="Cerrar('reseña_xcx')">ver menos</a>
 					</div>
-					*Esta es la nota del juego.
+
 					<div class="notaJuego">
-						<p>10</p>
+						<p>9.5</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	-->
-		</main>
-		<footer class="pie-pagina-principal">
-			<div class="footer-contenedor">
-				<div class="footer-info">
-					<h3 class="footer-logo">JuegaManiacos</h3>
-					<p>La mejor comunidad para entusiastas de los videojuegos y las reseñas tecnológicas.</p>
-				</div>
 
-				<div class="footer-enlaces">
-					<h4>Navegación</h4>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="nosotros.html">Sobre Nosotros</a></li>
-						<li><a href="resenas.html">Reseñas</a></li>
-						<li><a href="envia.html">Envia tu reseña</a></li>
-					</ul>
-				</div>
-
-				<div class="footer-social">
-					<h4>Síguenos</h4>
-					<div class="iconos-redes">
-						<a href="#" class="red-link">Facebook</a>
-						<a href="#" class="red-link">Instagram</a>
-						<a href="#" class="red-link">Twitter</a>
-					</div>
-				</div>
+	<footer class="pie-pagina-principal">
+		<div class="footer-contenedor">
+			<div class="footer-info">
+				<h3 class="footer-logo">JuegaManiacos</h3>
+				<p>La mejor comunidad para entusiastas de los videojuegos y las reseñas tecnológicas.</p>
 			</div>
 
-			<div class="footer-copyright">
-				<p>&copy; 2026 JuegaManiacos — Desarrollado por el Equipo de Desarrollo</p>
+			<div class="footer-enlaces">
+				<h4>Navegación</h4>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Sobre Nosotros</a></li>
+					<li><a href="resenas.html">Reseñas</a></li>
+					<li><a href="envia.html">Envia tu reseña</a></li>
+				</ul>
 			</div>
-		</footer>
-		<script>
-			function Cerrar(p1) {
-				document.getElementById(p1).style.display = "none";
-			}
 
-			function Abrir(p1) {
-				document.getElementById(p1).style.display = "block";
-			}
-		</script>
-	</body>
+			<div class="footer-social">
+				<h4>Síguenos</h4>
+				<div class="iconos-redes">
+					<a href="#" class="red-link">Facebook</a>
+					<a href="#" class="red-link">Instagram</a>
+					<a href="#" class="red-link">Twitter</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			<p>&copy; 2026 JuegaManiacos — Desarrollado por el Equipo de Desarrollo</p>
+		</div>
+	</footer>
+	<script>
+		function Cerrar(p1) {
+			document.getElementById(p1).style.display = "none";
+		}
+
+		function Abrir(p1) {
+			document.getElementById(p1).style.display = "block";
+		}
+	</script>
+</body>
