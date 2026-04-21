@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="version" content="1.0.0">
-  <title>Mi Proyecto Web</title>
+  <title>JuegaManiacos</title>
   <!-- Hoja de estilos compartida por todas las páginas del proyecto -->
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
   <!-- ============================================================
@@ -15,19 +17,16 @@
        - El menú debe enlazar a todas las páginas del proyecto
        - Cada miembro del equipo añadirá su página aquí
        ============================================================ -->
-  <header>
-    <div class="header-contenido">
-      <h1 class="logo">Mi Proyecto</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <!-- AÑADIR AQUÍ los enlaces a las páginas del equipo -->
-          <!-- Ejemplo: <li><a href="about.html">Sobre nosotros</a></li> -->
-          <!-- Ejemplo: <li><a href="contacto.html">Contacto</a></li>  -->
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="cabecera-principal">
+    <a href="index.html" class="enlace-cabecera-total">
+        <div class="logo-contenedor">
+            <img src="imagenes/logo/logo.png" alt="Logo JuegaManiacos" class="logo-img">
+            <h1 class="nombre-sitio">JuegaManiacos</h1>
+        </div>
+    </a>
+
+    <div id="contenedor-menu-interactivo"></div>
+</header>
 
   <!-- ============================================================
        CONTENIDO PRINCIPAL
@@ -51,7 +50,7 @@
 
     <!-- Sección de tarjetas / destacados -->
     <section class="tarjetas">
-      
+
     </section>
 
   </main>
@@ -68,4 +67,5 @@
   </footer>
 
 </body>
+
 </html>

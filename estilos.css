@@ -13,12 +13,69 @@
    ---------------------------------------------------------------- */
 
 /* TODO: Añadir estilos generales (fuente, colores base, márgenes...) */
+body {
+    background-color: #011741; 
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 
 
 /* ----------------------------------------------------------------
    2. CABECERA Y NAVEGACIÓN 
 
    ---------------------------------------------------------------- */
+
+/*Selectores del header (SEBASTIAN)*/
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ff88; 
+}
+
+header h1 {
+    color: #00ff88;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hacemos que el enlace ocupe todo el ancho disponible y quite estilos de texto */
+.enlace-cabecera-total {
+    text-decoration: none;
+    display: block; /* Permite que ocupe espacio como una caja */
+    width:100%;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 0; /* Un poco de margen interno para que sea más fácil hacer clic */
+    cursor: pointer;
+}
+
+/* Efecto visual opcional: que brille un poco al pasar el ratón por cualquier parte del header */
+.enlace-cabecera-total:hover .nombre-sitio {
+    text-shadow: 0 0 10px #00ff88;
+    transition: 0.3s;
+}
+
+.logo-img {
+    height: 50px;  /* Ajusta este valor (40px, 60px, etc.) según lo que necesites */
+    width: auto;   /* Esto mantiene la proporción original de la imagen */
+}
+
 
 /* ----------------------------------------------------------------
    3. PIE DE PÁGINA (footer)
@@ -34,35 +91,7 @@
 
 
 /* --- Página: nosotros.html --- */
-body {
-    background-color: #011741; 
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-}
 
-
-header {
-    background-color: #1f1f1f;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #00ff88; 
-}
-
-header h1 {
-    color: #00ff88;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-}
 
 
 .miembro {
