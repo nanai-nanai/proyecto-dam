@@ -1,98 +1,107 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envía tu reseña - Juegamaniacos</title>
-    <link rel="stylesheet" href="estilos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Envía tu reseña - Juegamaniacos</title>
+	<link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 	<header class="cabecera-principal">
-    <a href="index.html" class="enlace-cabecera-total">
-        <div class="logo-contenedor">
-            <img src="imagenes/logo/logo.png" alt="Logo JuegaManiacos" class="logo-img">
-            <h1 class="nombre-sitio">JuegaManiacos</h1>
-        </div>
-    </a>
+		<a href="index.html" class="enlace-cabecera-total">
+			<div class="logo-contenedor">
+				<img src="imagenes/logo/logo.png" alt="Logo JuegaManiacos" class="logo-img">
+				<h1 class="nombre-sitio">JuegaManiacos</h1>
+			</div>
+		</a>
 
-    <div id="contenedor-menu-interactivo"></div>
-</header>
-	<div>
-		<div>
-		<a href="index.html">PRINCIPAL</a>
-		</div>
-		<div>
-		<a href="resenas.html">RESEÑAS</a>
-		</div>
-		<div>
-		<a href="nosotros.html">NOSOTROS</a>
-		</div>
-		<div>
-		<a href="envia.html">ENVIA TU RESEÑA</a>
+		<div id="contenedor-menu-interactivo"></div>
+	</header>
+
+	<div class="menu_general">
+		<div class="menu">
+			<div class="principal">
+				<a href="index.html">PRINCIPAL</a>
+			</div>
+			<div class="reseñas">
+				<a href="resenas.html">RESEÑAS</a>
+			</div>
+			<div class="nosotros">
+				<a href="nosotros.html">NOSOTROS</a>
+			</div>
+			<div class="envia">
+				<a href="envia.html">ENVIA TU RESEÑA</a>
+			</div>
 		</div>
 	</div>
-	<h1>ENVÍA TU RESEÑA</h1>
-	<div class="formulario">
-				<form action="contacto.php" method="post" class="contacto">
-					<legend>Reseña:</legend>
-					<p>Datos personales</p>
-					<div>
-						<label for="nombre">Nombre:</label><br>
-						<input id="nombre" type="text" name="nombre"
-							placeholder="El nombre o apodo de quien escribe la reseña" required="" />
-					</div>
-					<div>
-						<label for="email">E-mail:</label><br>
-						<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-					</div>
-					<p>Datos del juego</p>
-					<div>
-						<label for="asunto">Título del juego:</label><br>
-						<input id="asunto" type="asunto" />
-					</div>
-					<div>
-						<label for="mensaje">Reseña:</label><br>
-						<textarea id="mensaje" name="mensaje" placeholder="Escribe aquí todo el texto de tu reseña"
-							required></textarea>
-					</div>
-					<div>
-						<label for="nota">Nota:</label><br>
-						<textarea id="nota" name="nota" placeholder="Puntuación sobre 10" required></textarea>
-					</div>
-					<input id="submit" type="submit" name="submit" value="Enviar" />
-				</form>
-			</div>
-		</main>
-		<footer class="pie-pagina-principal">
-			<div class="footer-contenedor">
-				<div class="footer-info">
-					<h3 class="footer-logo">JuegaManiacos</h3>
-					<p>La mejor comunidad para entusiastas de los videojuegos y las reseñas tecnológicas.</p>
-				</div>
 
-				<div class="footer-enlaces">
-					<h4>Navegación</h4>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="nosotros.html">Sobre Nosotros</a></li>
-						<li><a href="resenas.html">Reseñas</a></li>
-						<li><a href="envia.html">Envia tu reseña</a></li>
-					</ul>
+	<main>
+		<h1>ENVÍA TU RESEÑA</h1>
+		<div class="formulario">
+			<form action="contacto.php" method="post" class="contacto">
+				<legend>Reseña:</legend>
+				<p>Datos personales</p>
+				<div>
+					<label for="nombre">Nombre:</label><br>
+					<input id="nombre" type="text" name="nombre" placeholder="El nombre o apodo de quien escribe la reseña"
+						required="" />
 				</div>
+				<div>
+					<label for="email">E-mail:</label><br>
+					<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+				</div>
+				<p>Datos del juego</p>
+				<div>
+					<label for="asunto">Título del juego:</label><br>
+					<input id="asunto" type="text" name="asunto" required />
+				</div>
+				<div>
+					<label for="mensaje">Reseña:</label><br>
+					<textarea id="mensaje" name="mensaje" placeholder="Escribe aquí todo el texto de tu reseña"
+						required></textarea>
+				</div>
+				<div>
+					<label for="nota">Nota:</label><br>
+					<textarea id="nota" name="nota" placeholder="Puntuación sobre 10" required></textarea>
+				</div>
+				<input id="submit" type="submit" name="submit" value="Enviar" />
+			</form>
+		</div>
+	</main>
 
-				<div class="footer-social">
-					<h4>Síguenos</h4>
-					<div class="iconos-redes">
-						<a href="#" class="red-link">Facebook</a>
-						<a href="#" class="red-link">Instagram</a>
-						<a href="#" class="red-link">Twitter</a>
-					</div>
-				</div>
+	<footer class="pie-pagina-principal">
+		<div class="footer-contenedor">
+			<div class="footer-info">
+				<h3 class="footer-logo">JuegaManiacos</h3>
+				<p>La mejor comunidad para entusiastas de los videojuegos y las reseñas tecnológicas.</p>
 			</div>
 
-			<div class="footer-copyright">
-				<p>&copy; 2026 JuegaManiacos — Desarrollado por el Equipo de Desarrollo</p>
+			<div class="footer-enlaces">
+				<h4>Navegación</h4>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Sobre Nosotros</a></li>
+					<li><a href="resenas.html">Reseñas</a></li>
+					<li><a href="envia.html">Envia tu reseña</a></li>
+				</ul>
 			</div>
-		</footer>
-	</body>
+
+			<div class="footer-social">
+				<h4>Síguenos</h4>
+				<div class="iconos-redes">
+					<a href="#" class="red-link">Facebook</a>
+					<a href="#" class="red-link">Instagram</a>
+					<a href="#" class="red-link">Twitter</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			<p>&copy; 2026 JuegaManiacos — Desarrollado por el Equipo de Desarrollo</p>
+		</div>
+	</footer>
+</body>
+
+</html>
