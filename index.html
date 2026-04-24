@@ -1,71 +1,324 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="version" content="1.0.0">
-  <title>Mi Proyecto Web</title>
-  <!-- Hoja de estilos compartida por todas las páginas del proyecto -->
-  <link rel="stylesheet" href="estilos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="version" content="1.0.0">
+	<title>JuegaManiacos</title>
+	<link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+	<header class="cabecera-principal">
+		<a href="index.html" class="enlace-cabecera-total">
+			<div class="logo-contenedor">
+				<img src="imagenes/logo/logo.png" alt="Logo JuegaManiacos" class="logo-img">
+				<h1 class="nombre-sitio">JuegaManiacos</h1>
+			</div>
+		</a>
 
-  <!-- ============================================================
-       CABECERA Y MENÚ DE NAVEGACIÓN
-       - El menú debe enlazar a todas las páginas del proyecto
-       - Cada miembro del equipo añadirá su página aquí
-       ============================================================ -->
-  <header>
-    <div class="header-contenido">
-      <h1 class="logo">Mi Proyecto</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <!-- AÑADIR AQUÍ los enlaces a las páginas del equipo -->
-          <!-- Ejemplo: <li><a href="about.html">Sobre nosotros</a></li> -->
-          <!-- Ejemplo: <li><a href="contacto.html">Contacto</a></li>  -->
-        </ul>
-      </nav>
-    </div>
-  </header>
+		<div id="contenedor-menu-interactivo"></div>
+	</header>
 
-  <!-- ============================================================
-       CONTENIDO PRINCIPAL
-       - Esta sección es el cuerpo de la página de inicio
-       - El equipo puede personalizar el contenido según el tema
-       ============================================================ -->
-  <main>
+	<div class="menu_general">
+		<div class="menu">
+			<div class="principal">
+				<a href="index.html">PRINCIPAL</a>
+			</div>
+			<div class="reseñas">
+				<a href="resenas.html">RESEÑAS</a>
+			</div>
+			<div class="nosotros">
+				<a href="nosotros.html">NOSOTROS</a>
+			</div>
+			<div class="envia">
+				<a href="envia.html">ENVIA TU RESEÑA</a>
+			</div>
+		</div>
+	</div>
 
-    <!-- Sección de bienvenida -->
-    <section class="bienvenida">
-      <h2>Bienvenidos a nuestro proyecto</h2>
-      <p>
-        Esta es la página de inicio. El equipo puede personalizar este contenido
-        según el tema elegido para el proyecto.
-      </p>
-      <p>
-        <!-- MODIFICAR: Escribid aquí una breve descripción de vuestro proyecto -->
-        Descripción breve del proyecto...
-      </p>
-    </section>
+	<main>
+		<section class="bienvenida">
+			<h2>Bienvenidos a nuestro proyecto</h2>
+			<p>
+				Esta es la página de inicio. El equipo puede personalizar este contenido
+				según el tema elegido para el proyecto.
+			</p>
+			<p>
+				Descripción breve del proyecto...
+			</p>
+		</section>
 
-    <!-- Sección de tarjetas / destacados -->
-    <section class="tarjetas">
-      
-    </section>
+		<section class="tarjetas">
+			<p> a </p>
+		</section>
 
-  </main>
+		<section class="Novedades">
+			<h2 class="titulo_novedades"> NOTICIAS Y OFERTAS RECIENTES DE JUEGOS:</h2>
 
-  <!-- ============================================================
-       PIE DE PÁGINA
-       - Información de contacto, créditos y enlaces secundarios
-       ============================================================ -->
-  <footer>
-    <div class="footer-contenido">
-      <p>&copy; 2026 Mi Proyecto &mdash; Desarrollado por</p>
-      <!-- AÑADIR: nombres del equipo, enlaces a redes sociales, etc. -->
-    </div>
-  </footer>
+			<div class="noticias_ofertas_general">
+				<div class="noticias_juegos_general">
+
+					<h3 class="noticias_juegos_titulo"> Noticias de juegos: </h3>
+					<h3 class="noticia_juego1">
+						<img src="imagenes/Imagenes noticas y ofertas/56c4948088a7e300458b46b0.jpg" class="imagen_assasins">
+						<a href="https://www.clavecd.es/fecha-hora-presentacion-assassins-creed-black-flag-resynced-news-d">Assassin's Creed Black Flag Resynced: Fecha y Hora del Anuncio</a>
+						<div class="tiempo_publication">Hace 38 minutos.</div>
+					</h3>
+
+					<br>
+
+					<h3 class="noticia_juego2">
+						<img src="imagenes/Imagenes noticas y ofertas/1200x628-PS-Leaving-May-2026.webp" class="imagen_juegos_psplus">
+						<a href="https://www.clavecd.es/juegos-abandonan-playstation-plus-mayo-2026-news-n">Juegos que abandonan PlayStation Plus en mayo 2026: Última oportunidad</a>
+						<div class="tiempo_publication">Hace 3 horas.</div>
+					</h3>
+
+					<br>
+
+					<h3 class="noticia_juego3">
+						<img src="imagenes/Imagenes noticas y ofertas/header_alt_assets_2.jpg" class="imagen_Below_the_Crown">
+						<a href="https://www.clavecd.es/below-the-crown-roguelike-tactico-lanzamiento-news-l">Por qué Below the Crown es la joya táctica que no debes perderte.</a>
+						<div class="tiempo_publication">Hace 8 horas.</div>
+					</h3>
+
+					<br>
+
+					<h3 class="noticia_juego4">
+						<img src="imagenes/Imagenes noticas y ofertas/header.jpg" class="imagen_project_ants">
+						<a href="https://www.clavecd.es/project-ants-metroidvania-3d-combate-tecnico-news-r">Project Ants Mezcla Exploración Metroidvania 3D con Combate Técnico</a>
+						<div class="tiempo_publication">Hace 9 horas.</div>
+					</h3>
+
+				</div>
+				<br>
+
+				<div class="ofertas_juegos_general">
+					<h3 class="noticias_juegos_titulo"> Ofertas de juegos: </h3>
+					<h3 class="oferta_juego1">
+						<img src="imagenes/Imagenes noticas y ofertas/Sintopia-OPUS-Prism-Peak-172x90.webp" class="imagen_Sintopia_Opus">
+						<a href="https://www.clavecd.es/ahorrar-sintopia-opus-prism-peak-ofertas-indie-news-y">Paga menos por grandes éxitos indies como Sintopia y OPUS Prism Peak</a>
+						<div class="tiempo_publication">Hace 1 hora.</div>
+					</h3>
+					<br>
+
+					<h3 class="oferta_juego2">
+						<img src="imagenes/Imagenes noticas y ofertas/mapa_juego_oferta.png" class="imagen_mapa_juego_oferta">
+						<a href="https://www.clavecd.es/ofertas-juegos-pc-el-mapa-mundial-gratuito-de-2026-lb">Ofertas juegos PC: el mapa mundial gratuito de 2026</a>
+						<div class="tiempo_publication">Hace 20 hora.</div>
+					</h3>
+
+					<br>
+
+					<h3 class="oferta_juego3">
+						<img src="imagenes/Imagenes noticas y ofertas/Manor-Lords-2.webp" class="imagen_Manor_Lords_2">
+						<a href="https://www.clavecd.es/manor-lords-comparativa-precios-tiendas-oficiales-alternativas-news-y">Manor Lords: Comparativa de Precios entre Tiendas Oficiales y Alternativas</a>
+						<div class="tiempo_publication">Hace 22 horas.</div>
+					</h3>
+
+					<br>
+
+					<h3 class="oferta_juego4">
+						<img src="imagenes/Imagenes noticas y ofertas/Hades-II-2.webp" class="imagen_Hades_2">
+						<a href="https://www.clavecd.es/hades-2-consola-barato-tiendas-oficiales-oferta-news-y/">Consigue Hades II más barato en consola evitando las tiendas oficiales</a>
+						<div class="tiempo_publication">Hace 2 días.</div>
+					</h3>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<aside>
+		<div class="Cabecera_ranking">
+			<h3> Top 10 Juegos más relevantes: </h3>
+			<h4> Último mes </h4>
+		</div>
+
+		<a href="https://store.steampowered.com/app/3357650/PRAGMATA/" title="Pragmata">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">1º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/Pragmata-4.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Pragmata</div>
+				<div class="precio_Juego">59,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/" title="Hello Kity Island Adventure">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">2º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/HelloKittyIslandAdventure-2.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Hello Kity Island Adventure</div>
+				<div class="precio_Juego">39,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://www.minecraft.net/es-es/store/minecraft-deluxe-collection-pc?tabs=%7B" title="Minecraft">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">3º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/Minecraft-new.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Minecraft</div>
+				<div class="precio_Juego">29,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" title="Red Dead Redemption 2">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">4º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/RedDeadRedemption2-3.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Red Dead Redemption 2</div>
+				<div class="precio_Juego">59,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/" title="Resident Evil Requiem">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">5º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/ResidentEvilRequiem.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Resident Evil Requiem</div>
+				<div class="precio_Juego">69,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" title="Clair Obscur Expedition 33">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">6º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/ClairObscurExpedition33.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Clair Obscur Expedition 33</div>
+				<div class="precio_Juego">49,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" title="Cyberpunk 2077">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">7º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/Cyberpunk2077-4.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Cyberpunk 2077</div>
+				<div class="precio_Juego">59,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/275850/No_Mans_Sky/" title="No Man's Sky">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">8º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/NoMansSky-1.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">No Man's Sky</div>
+				<div class="precio_Juego">58,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" title="Helldivers 2">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">9º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/Helldivers-2n-1.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Helldivers 2</div>
+				<div class="precio_Juego">39,99€</div>
+			</div>
+		</a>
+
+		<br>
+
+		<a href="https://store.steampowered.com/app/3167020/Escape_from_Duckov/" title="Escape From Duckov">
+			<div class="clasificacion_Ranking">
+				<span class="numero_Ranking">10º.</span>
+			</div>
+			<div class="imagenJuego">
+				<img src="imagenes/imagenes_juegos_ranking/EscapeFromDuckov.jpg" alt="Descripcion de la imagen" width="140" height="200">
+			</div>
+			<div class="caracteristicas_Juego">
+				<div class="nombre_Juego">Escape From Duckov</div>
+				<div class="precio_Juego">17,99€</div>
+			</div>
+		</a>
+	</aside>
+
+	<footer class="pie-pagina-principal">
+		<div class="footer-contenedor">
+			<div class="footer-info">
+				<h3 class="footer-logo">JuegaManiacos</h3>
+				<p>La mejor comunidad para entusiastas de los videojuegos y las reseñas tecnológicas.</p>
+			</div>
+
+			<div class="footer-enlaces">
+				<h4>Navegación</h4>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Sobre Nosotros</a></li>
+					<li><a href="resenas.html">Reseñas</a></li>
+					<li><a href="envia.html">Envia tu reseña</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-social">
+				<h4>Síguenos</h4>
+				<div class="iconos-redes">
+					<a href="#" class="red-link">Facebook</a>
+					<a href="#" class="red-link">Instagram</a>
+					<a href="#" class="red-link">Twitter</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			<p>&copy; 2026 JuegaManiacos — Desarrollado por el Equipo de Desarrollo</p>
+		</div>
+	</footer>
 
 </body>
+
 </html>
