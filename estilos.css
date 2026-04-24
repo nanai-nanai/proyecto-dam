@@ -181,6 +181,43 @@ header h1 {
 
 /* --- Página: index.html --- */
 
+/*Sección Menu Interactivo (Jhonatan)*/
+.menu_general {
+  background-color: #0b1a3a; /* azul oscuro */
+  padding: 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;              
+  justify-content: center;
+
+}
+
+.principal, .reseñas, .nosotros, .envia {
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #00ffcc; 
+  color: black;
+}
+
+
+
+
 /*Seccion Novedades (Jhonatan)*/ 
 
 .noticias_ofertas_general {
